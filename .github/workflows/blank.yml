@@ -18,7 +18,7 @@ jobs:
           echo "$GITHUB_ACTOR"
 
       - name: Run a multi-line script
-        if: $GITHUB_ACTOR == "nrraphael"
+        if: github.actor == "nrraphael"
         run: |
           echo $GITHUB_ACTOR,
           echo "$GITHUB_ACTOR"
